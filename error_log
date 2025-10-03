@@ -1,0 +1,120 @@
+[29-Oct-2024 03:50:08 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/category/articles/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:08 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:08 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:08 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[29-Oct-2024 03:50:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[29-Oct-2024 03:50:09 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/category/news/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:09 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:09 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:09 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[29-Oct-2024 03:50:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[29-Oct-2024 03:50:09 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/gallery/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:09 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:09 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:09 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[29-Oct-2024 03:50:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[29-Oct-2024 03:50:10 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/category/articles/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:10 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:10 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:10 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[29-Oct-2024 03:50:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[29-Oct-2024 03:50:11 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/category/news/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:11 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:11 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:11 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[29-Oct-2024 03:50:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[29-Oct-2024 03:50:12 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/gallery/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:12 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:12 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[29-Oct-2024 03:50:12 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[29-Oct-2024 03:50:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:13 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/category/articles/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:13 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:13 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:13 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:14 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/category/news/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:14 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:14 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:14 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:14 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/gallery/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:14 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:14 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:14 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:15 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/category/articles/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:15 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:15 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:15 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:15 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/category/news/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:15 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:15 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:15 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:16 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/gallery/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:16 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:16 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:16 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:46 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/category/articles/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:46 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:46 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:46 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:46 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/category/news/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:46 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:46 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:46 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/gallery/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:47 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/category/articles/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:47 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/category/news/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:47 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[07-Jan-2025 06:23:48 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/gallery/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:48 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:48 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[07-Jan-2025 06:23:48 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[07-Jan-2025 06:23:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[25-Feb-2025 09:56:21 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/category/articles/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:21 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:21 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:21 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[25-Feb-2025 09:56:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[25-Feb-2025 09:56:22 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/category/news/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:22 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:22 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:22 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[25-Feb-2025 09:56:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[25-Feb-2025 09:56:22 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/himti/gallery/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:22 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:22 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:22 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[25-Feb-2025 09:56:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[25-Feb-2025 09:56:23 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/category/articles/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:23 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:23 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:23 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[25-Feb-2025 09:56:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[25-Feb-2025 09:56:23 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/category/news/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:23 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:23 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:23 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[25-Feb-2025 09:56:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75
+[25-Feb-2025 09:56:24 UTC] PHP Warning:  simplexml_load_file(): https://student-activity.binus.ac.id/binary/gallery/feed/atom:1: parser error : XML declaration allowed only at the start of the document in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:24 UTC] PHP Warning:  simplexml_load_file():     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;feed in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:24 UTC] PHP Warning:  simplexml_load_file():          ^ in /home/himtibin/public_html/ofog/feed.php on line 72
+[25-Feb-2025 09:56:24 UTC] PHP Notice:  Trying to get property 'entry' of non-object in /home/himtibin/public_html/ofog/feed.php on line 73
+[25-Feb-2025 09:56:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/himtibin/public_html/ofog/feed.php on line 75

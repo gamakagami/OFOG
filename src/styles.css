@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+    
     .nav{
         @apply w-full z-10 duration-500;
         background-color: #0C0217;
@@ -171,3 +172,4 @@
 .logo-info-img{
     height: 50vh;
 }
+

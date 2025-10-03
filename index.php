@@ -18,30 +18,93 @@ include('components/journey-items.php');
     require('components/head.php');
     ?>
 
-    <link rel="stylesheet" href="assets/css/testimonies.css">
-    <link rel="stylesheet" href="assets/css/ourjourney.css">
+    <link rel="stylesheet" href="assets/css/testimonies.css?v=2">
+    <link rel="stylesheet" href="assets/css/ourjourney.css?v=2">
+    <link rel="stylesheet" href="assets/css/gallery.css?v=2">
     
     <script>
-      let activeProfile;
+        let activeProfile;
 
-      function testimoniesImgClick(name) {
-        if (name === activeProfile) {
-          return;
+        function testimoniesImgClick(name) {
+            if (name === activeProfile) {
+            return;
+            }
+            const newImage = document.getElementById(name + "Photo");
+            const newProfile = document.getElementById(name + "Profile");
+            newImage.classList.add("profselector__img--active");
+            newProfile.classList.remove("profdesc--hidden");
+            
+            const oldImage = document.getElementById(activeProfile + "Photo");
+            const oldProfile = document.getElementById(activeProfile + "Profile");
+            activeProfile = name;
+            if(!oldImage || !oldProfile){
+                return
+            }
+            oldImage.classList.remove("profselector__img--active");
+            oldProfile.classList.add("profdesc--hidden");
         }
-        const newImage = document.getElementById(name + "Photo");
-		const newProfile = document.getElementById(name + "Profile");
-        newImage.classList.add("profselector__img--active");
-		newProfile.classList.remove("profdesc--hidden");
-		
-		const oldImage = document.getElementById(activeProfile + "Photo");
-        const oldProfile = document.getElementById(activeProfile + "Profile");
-		activeProfile = name;
-		if(!oldImage || !oldProfile){
-			return
-		}
-		oldImage.classList.remove("profselector__img--active");
-        oldProfile.classList.add("profdesc--hidden");
-      }
+
+        // Function for animation in achievement section
+        document.addEventListener("DOMContentLoaded", function() {
+            const section = document.getElementById("our-journey-section");
+            const pointer = document.getElementById("journeylist-pointer");
+            const container = document.getElementById("journeylist-content");
+
+            function updatePointerPosition() {
+                const sectionRect = section.getBoundingClientRect();
+                const pointerHeight = pointer.offsetHeight;
+                const containerHeight = container.offsetHeight;
+
+                // Only move pointer if section is visible in viewport
+                if (sectionRect.bottom > 0 && sectionRect.top < window.innerHeight) {
+                    const visibleTop = Math.max(sectionRect.top, 0);
+                    const visibleBottom = Math.min(sectionRect.bottom, window.innerHeight);
+
+                    // Tracks scrolling progress
+                    const sectionScrollRange = sectionRect.height - window.innerHeight;
+                    let scrollProgress = 0;
+                    if (sectionScrollRange > 0) {
+                        scrollProgress = (window.scrollY + visibleTop - section.offsetTop) / sectionScrollRange;
+                        scrollProgress = Math.max(0, Math.min(1, scrollProgress));
+                    }
+
+                    // Borders
+                    const minY = 0;
+                    const maxY = containerHeight - pointerHeight - 100;
+
+                    // Set pointer position within allowed range
+                    const pointerY = minY + (maxY - minY) * scrollProgress;
+                    pointer.style.position = "absolute";
+                    pointer.style.top = pointerY + "px";
+
+                    // Line made visible when pointer passes
+                    const timelineDots = container.querySelectorAll('.journeylist-timeline');
+                    timelineDots.forEach(dot => {
+                        const dotTop = parseFloat(dot.style.top);
+                        if (pointerY >= dotTop) {
+                            dot.style.opacity = "1";
+                        } else {
+                            dot.style.opacity = "0";
+                        }
+                    });
+
+                    // Event made visible when pointer passes
+                    const events = container.querySelectorAll('.event');
+                    events.forEach(event => {
+                        const eventTop = event.offsetTop;
+                        if (pointerY >= eventTop + 100) {
+                            event.style.opacity = "1";
+                        } else {
+                            event.style.opacity = "0";
+                        }
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", updatePointerPosition);
+            window.addEventListener("resize", updatePointerPosition);
+            updatePointerPosition();
+        });
     </script>
 </head>
 
@@ -132,80 +195,144 @@ include('components/journey-items.php');
                     </div>
                 </div>
             </a>
-            <a href="https://hishot.himtibinus.or.id/" class="linkupcoming" target="_blank">
+              <a href="https://hishot.himtibinus.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
-                    <div style="height: 75%; display: flex;">
-                        <img sytle="height: 60%;" src="assets/img/events/HISHOT2024.png" alt="" class="logo">
+                    <div style="height: 75%; display: flex;" class="image-container">
+                        <img sytle="height: 60%;" src="assets/img/events/HISHOT2025.png" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem shadow">
-                        <p>HISHOT 2024: PROTECT</p>
-                        <p data-countdown-enabled="true" data-countdown-timestamp="2023-07-29 13:00:00"></p>
-                        <p>27 July 2024</p>
+                        <p>HISHOT 2025: GAME ON</p>
+                        <p>11 June 2025</p>
+                    </div>
+                </div>
+            </a>
+               <a href="https://techfest.himtibinus.or.id/" class="linkupcoming" target="_blank">
+                <div class="upcomingeventrow">
+                    <div style="height: 75%; display: flex;" class="image-container">
+                        <img sytle="height: 60%;" src="assets/img/events/TECHFEST2025.png" alt="" class="logo">
+                    </div>
+
+                    <div class="upcomingeventitem shadow">
+                        <p>TECHFEST 2025: MAGIC</p>
+                        <p>19 July 2025</p>
                     </div>
                 </div>
             </a>
         </div>
     </div>
-    <div class="mx-auto" style="max-width: 1536px">
-      <h1 class="title">
-        <span>TESTIMONIES</span>
-      </h1>
-      <br />
-      <div class="d-flex container profwrapper shadow-lg">
-        <div
-          class="d-flex align-items-center profselector"
-        >
-		<?php
-		$first = true;
-		if($testimonies != NULL && count($testimonies) > 0){
-			foreach ($testimonies as $testimony) {
-				echo '
-          		<img
-            		id="', $testimony["id"], 'Photo"
-            		onclick="testimoniesImgClick(\'', $testimony["id"], '\')"
-            		class="profselector__img rounded-circle profselector__img', $first ? " profselector__img--active " : "",'"
-            		src="assets/img/testimonies-thumbnail/', $testimony["id"], 'Photo.webp"
-				/>';
-				$first = false;
-			}
-		}
-		?>
-        </div>
-	  	<?php
-		if($testimonies != NULL && count($testimonies) > 0){
-			// Active profile = pertama, kecuali kalo ada request.
-			$first = true;
-			$valid_ids = array(); //Validation biar ga ada XSS.
-			foreach ($testimonies as $testimony) {
-				echo '<div id="', $testimony["id"], 'Profile" class="profdesc shadow-lg', $first ? '' : ' profdesc--hidden', '">';
-					echo '<div class="profdesc__summary">';
-						echo '
-						<img class="profdesc__sumimg" src="assets/img/testimonies-thumbnail/', $testimony["id"], 'Photo.webp"/> <br> <br>
-						<h2 class="profdesc__name fw-bold">', $testimony["name"] ,'</h2>
-						<h3 class="profdesc__job fs-6 fw-normal mb-4">', $testimony["job"], '</h3>
-						<div class="profdesc__years"> Kepengurusan HIMTI: ', $testimony["active_years"], '</div>';
-                        echo '<ul class="profdesc__experiences">';
-                        foreach ($testimony['experiences'] as $experience){
-                            echo '<li><b> ', $experience['experience'], '</b> (', $experience['year'] , ') </li>';
+    
+    <div class="testimonies-section">
+        <div class="container">
+            <!-- Header -->
+            <div class="title mb-5">
+                <span>Testimonies</span>
+            </div>
+
+            <div class="row g-4">
+                <!-- Profile Selector -->
+                <div class="col-lg-4">
+                    <div class="profiles-container">
+                        <h3 class="profiles-title">Alumni HIMTI</h3>
+                        <div class="profiles-list">
+                            <?php
+                            $first = true;
+                            if($testimonies != NULL && count($testimonies) > 0) {
+                                foreach ($testimonies as $index => $testimony) {
+                                    $activeClass = $first ? 'active' : '';
+                                    echo '
+                                    <div class="profile-card ' . $activeClass . '" 
+                                        onclick="showTestimony(\'' . $testimony["id"] . '\', ' . $index . ')" 
+                                        data-testimony-id="' . $testimony["id"] . '">
+                                        <div class="profile-card-content">
+                                            <img src="assets/img/testimonies-thumbnail/' . $testimony["id"] . 'Photo.webp" 
+                                                alt="' . $testimony["name"] . '" 
+                                                class="profile-avatar">
+                                            <div class="profile-info">
+                                                <h4 class="profile-name">' . $testimony["name"] . '</h4>
+                                                <p class="profile-job">' . $testimony["job"] . '</p>
+                                                <span class="profile-years">' . $testimony["active_years"] . '</span>
+                                            </div>
+                                        </div>
+                                    </div>';
+                                    $first = false;
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimony Content -->
+                <div class="col-lg-8">
+                    <div class="testimony-container">
+                        <?php
+                        $first = true;
+                        if($testimonies != NULL && count($testimonies) > 0) {
+                            foreach ($testimonies as $index => $testimony) {
+                                $activeClass = $first ? 'active' : '';
+                                echo '
+                                <div class="testimony-content ' . $activeClass . '" id="testimony-' . $testimony["id"] . '">
+                                    <div class="testimony-header">
+                                        <img src="assets/img/testimonies-thumbnail/' . $testimony["id"] . 'Photo.webp" 
+                                                alt="' . $testimony["name"] . '" 
+                                                class="testimony-avatar">
+                                        <div class="testimony-info">
+                                            <h2 class="testimony-name">' . $testimony["name"] . '</h2>
+                                            <p class="testimony-job">' . $testimony["job"] . '</p>
+                                            <span class="testimony-period">Kepengurusan HIMTI: ' . $testimony["active_years"] . '</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="experiences-section">
+                                        <h3 class="experiences-title">Pengalaman di HIMTI</h3>
+                                        <ul class="experiences-list">';
+                                
+                                foreach ($testimony['experiences'] as $experience) {
+                                    echo '<li><strong>' . $experience['experience'] . '</strong> (' . $experience['year'] . ')</li>';
+                                }
+                                
+                                echo '
+                                        </ul>
+                                    </div>
+
+                                    <div class="testimony-text">
+                                        <div class="quote-icon">"</div>
+                                        <blockquote>' . nl2br($testimony["testimony"]) . '</blockquote>
+                                    </div>
+                                </div>';
+                                $first = false;
+                            }
                         }
-                        echo '</ul>';
-					echo '</div>';
-					echo '<div class="profdesc__story mt-4">', $testimony["testimony"],'</div>';
-				echo'</div>';
-				array_push($valid_ids, $testimony["id"]);
-				if($first){
-					echo '<script type="text/javascript">activeProfile="',$testimony["id"],'"</script>';
-				}
-				$first = false;
-			}
-			if(array_key_exists("profile", $_GET) && in_array($_GET["profile"], $valid_ids)){
-				echo '<script type="text/javascript">testimoniesImgClick("',$_GET["profile"],'")</script>';
-			}
-		}
-		?>
-      </div>
+                        ?>
+
+                        <!-- Navigation -->
+                        <div class="testimony-navigation">
+                            <button class="nav-btn prev-btn" onclick="previousTestimony()">
+                                <span>‹</span> Previous
+                            </button>
+                            
+                            <div class="nav-dots">
+                                <?php
+                                if($testimonies != NULL && count($testimonies) > 0) {
+                                    foreach ($testimonies as $index => $testimony) {
+                                        $activeClass = $index === 0 ? 'active' : '';
+                                        echo '<span class="nav-dot ' . $activeClass . '" onclick="showTestimonyByIndex(' . $index . ')"></span>';
+                                    }
+                                }
+                                ?>
+                            </div>
+                            
+                            <button class="nav-btn next-btn" onclick="nextTestimony()">
+                                Next <span>›</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
     
     <div class="ourarticle">
         <div class="title">
@@ -226,13 +353,18 @@ include('components/journey-items.php');
     </div>
 
 
-    <div class="OURJOURNEY">
+    <div class="OURJOURNEY" id="our-journey-section">
         <div class="title white">
             <span>Our Journey</span>
         </div>
         <div id="journeylist-container">
             <div id="journeylist-content">
                 <?php 
+                echo '<div id="journeylist-pointer"></div>';
+                foreach($lines as $index => $line){
+                    $top = $index * $offset;
+                    echo '<div class="journeylist-timeline" style="top: ' . $top . 'px;"></div>';
+                }
                 foreach($journeys as $journey){
                     echo '<div class="event">';
                     if ($journey["imgurl"] != NULL) :
@@ -256,22 +388,70 @@ include('components/journey-items.php');
     <div class="pattern">
         <object data="assets/img/Transition.svg" alt="pattern-contact" class="objectdata"></object>
     </div>
+
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="galleryModalLabel"></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="galleryModalImg" src="" class="img-fluid rounded" alt="">
+            </div>
+            </div>
+        </div>
+    </div>
+
     <div class="gallery min-vh-100">
         <div class="title" style="padding-top: 0;">
             <span>Gallery</span>
         </div>
-        <div class="container-lg pt-5">
-            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="container-lg">
+            <!-- Gallery Filter -->
+            <div class="gallery-filter mb-4">
+                <button class="filter-btn active" data-filter="all">General</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="activities">Activities</button>
+                <button class="filter-btn" data-filter="achievements">Achievements</button>
+            </div>
+
+            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3" id="gallery-container">
                 <?php
-                    for($i = 1; $i <= 6; $i++){
-                        echo '<div class="col">
-                            <img src="assets/img/gallery/'.$i.'.jpg" class="gallery-item" alt="gallery">
+                    $gallery_items = [
+                        ['img' => '1.jpg', 'category' => 'events', 'title' => 'SESVENT 2025'],
+                        ['img' => '2.jpg', 'category' => 'activities', 'title' => 'SESVENT 2025'],
+                        ['img' => '3.jpg', 'category' => 'achievements', 'title' => 'HILET 2025'],
+                        ['img' => '4.jpg', 'category' => 'events', 'title' => 'HILET 2025'],
+                        ['img' => '5.jpg', 'category' => 'activities', 'title' => 'HISHOT 2025 Seminar'],
+                        ['img' => '6.jpg', 'category' => 'achievements', 'title' => 'HISHOT 2025 Seminar']
+                    ];
+
+                    foreach ($gallery_items as $item) {
+                        echo '<div class="col gallery-item-wrapper" data-category="'.$item['category'].'">
+                            <div class="gallery-item-container" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#galleryModal" 
+                                data-img="assets/img/gallery/'.$item['img'].'" 
+                                data-title="'.$item['title'].'">
+                                
+                                <img src="assets/img/gallery/'.$item['img'].'" class="gallery-item" alt="'.$item['title'].'">
+                                
+                                <div class="gallery-overlay" style="cursor: pointer;">
+                                    <div class="gallery-overlay-content">
+                                        <h5>'.$item['title'].'</h5>
+                                        <i class="bi bi-zoom-in"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>';
                     }
                 ?>
             </div>
         </div>
     </div>
+    <script src="assets/js/gallerybutton.js?v=2"></script>
+    
     <div class="FAQ mb-5">
         <div class="title" style="padding-top: 0;">
             <span>FREQUENTLY ASKED QUESTIONS</span>
@@ -300,7 +480,7 @@ include('components/journey-items.php');
                     </h2>
                     <div class="accordion-collapse collapse" id="collapseTwo" data-bs-parent="#accordionSection">
                         <div class="accordion-body">
-                            Di HIMTI BINUS sendiri terdapat tiga komisi yang terdiri dari dua divisi di tiap
+                            Di HIMTI BINUS sendiri terdapat empat komisi yang terdiri dari dua divisi di tiap
                             komisi.<br>
                             Komisi 1 yaitu <b>‘Education’</b> terdiri dari divisi Academic Event dan divisi Responsi.
                             <br>Komisi
@@ -310,7 +490,7 @@ include('components/journey-items.php');
                             Komisi 3 yaitu <b>‘Research and Development’</b> terdiri dari divisi Creative and
                             Design
                             dan divisi Web Development.<br>
-                            Terakhir, Komisi 4 yaitu <b>‘Resource Administration’</b> terdiri dari Supervisor 
+                            Terakhir, Komisi 4 yaitu <b>‘Resource and Development’</b> terdiri dari Supervisor 
                             dan Human Resource Development.<br>
                             <br>
 
@@ -363,11 +543,11 @@ include('components/journey-items.php');
     </div>
 
     <?php require_once('components/footer.php') ?>
-    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/script.js?v=2" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js?v=2"></script>
     <script>
     VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"), {
         max: 25,
@@ -377,7 +557,43 @@ include('components/journey-items.php');
     //It also supports NodeList
     VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"));
     </script>
-    <script src="assets/js/RSShandle.js"></script>
+    <script src="assets/js/testimonies.js?v=2"></script>
+    <script src="assets/js/RSShandle.js?v=2"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const galleryContainers = document.querySelectorAll(".gallery-item-container");
+        const modalImg = document.getElementById("galleryModalImg");
+        const modalTitle = document.getElementById("galleryModalLabel");
+
+        // Modal logic
+        galleryContainers.forEach(container => {
+            container.addEventListener("click", () => {
+            modalImg.src = container.dataset.img;
+            modalTitle.textContent = container.dataset.title;
+            });
+        });
+
+        // Filtering logic
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const galleryWrappers = document.querySelectorAll(".gallery-item-wrapper");
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+            filterBtns.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filter = btn.dataset.filter;
+            galleryWrappers.forEach(wrapper => {
+                wrapper.style.display = (filter === "all" || wrapper.dataset.category === filter)
+                ? "block"
+                : "none";
+            });
+            });
+        });
+        });
+    </script>
+
 </body>
 
 </html>

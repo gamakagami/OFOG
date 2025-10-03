@@ -23,7 +23,7 @@
                 <div class="half border-b lg:border-b-0 lg:border-r border-gray-100 pb-12 w-full lg:w-1/2">
                     <h2 class="h2 pb-10">Vision</h2>
                     <p>"Menjadikan HIMTI BINUS University sebagai Himpunan Mahasiswa yang dikenal se-Asia
-                        Tenggara pada tahun 2025"</p>
+Tenggara dalam bidang teknologi dan informatika."</p>
                 </div>
                 <div class="half pt-6 pt-12 lg:pt-0 w-full lg:w-1/2">
                     <h2 class="h2 pb-10">Mission</h2>
@@ -96,11 +96,11 @@
             </h1>
             <div style="position: relative; display: flex; margin:auto; text-align: center; justify-content:center;">
                 <div style="margin: 20px 30px; display:flex; flex-direction: column; gap: 5px;">
-                    <a href="assets/img/about/Struktur-NON-DPI-2024.png" style="padding-top:10px;" target="_blank">
-                        <img src="assets/img/about/Struktur-DPI-2024.png" Class="Bagan" alt="" style="display: flex; margin: auto;">
+                    <a href="assets/img/about/Struktur-DPI-2025.png" style="padding-top:10px;" target="_blank">
+                        <img src="assets/img/about/Struktur-DPI-2025.png" Class="Bagan" alt="" style="display: flex; margin: auto;">
                     </a>
-                    <a href="assets/img/about/Struktur-NON-DPI-2024.png" target="_blank">
-                        <img src="assets/img/about/Struktur-NON-DPI-2024.png"  Class="Bagan" alt="" style="display: flex; margin: auto;">
+                    <a href="assets/img/about/Struktur-NON-DPI-2025.png" target="_blank">
+                        <img src="assets/img/about/Struktur-NON-DPI-2025.png"  Class="Bagan" alt="" style="display: flex; margin: auto;">
                     </a>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                 <div class="cd-wrapper flex flex-col md:flex-row justify-center items-center">
                     <h2 class="h2 lg:hidden max-w-lg mx-auto font-extrabold pt-6">Commission 1: Education</h2>
                     <div class="cd-img-container">
-                        <img class="cd-img mb-12" src="assets/img/about/responsi-logo.svg" alt="">
+                        <img class="cd-img mb-12" src="assets/img/about/respo-logo-2025.svg" alt="">
                         <div class="overlay-text">
                             <h3 class="h-cd">Responsi Division</h3>
                             <p class="text-justify">Divisi ini memberikan pengayaan lebih dalam mengenai materi
@@ -138,17 +138,13 @@
                         </div>
                     </div>
                     <div class="hidden lg:block cd-img-container">
-                        <img class="com-logo cd-img" src="assets/img/about/komsat-logo.svg" alt="">
+                        <img class="com-logo cd-img" src="assets/img/about/komsat-logo-2025.svg" alt="">
                     </div>
                     <div class="cd-img-container">
-                        <img class="cd-img" src="assets/img/about/progclass-logo.svg" alt="">
+                        <img class="cd-img" src="assets/img/about/ae-logo-2025.svg" alt="">
                         <div class="overlay-text">
-                            <h3 class="h-cd">Programming Class Division</h3>
-                            <p class="text-justify">Divisi ini mengadakan kelas <i>programming</i> dengan materi
-                                yang
-                                tidak didapatkan selama perkuliahan pada umumnya sebagai bekal untuk
-                                meningkatkan
-                                kemampuan di bidang <i>IT</i>.</p>
+                            <h3 class="h-cd">Academic Event Division</h3>
+                            <p class="text-justify">Divisi ini menyelenggarakan acara-acara yang berhubungan dengan bidang akademis yang sedang ditekuni mahasiswa SOCS BINUS University, seperti <i>workshop, seminar, company visit</i>, dan acara akademik lainnya.</p>
                         </div>
                     </div>
                 </div>
@@ -159,7 +155,7 @@
                     <h2 class="h2 lg:hidden max-w-lg mx-auto font-extrabold pt-6">Commission 2: Relation
                         Expansion</h2>
                     <div class="cd-img-container">
-                        <img class="cd-img" src="assets/img/about/pm-logo.svg" alt="">
+                        <img class="cd-img" src="assets/img/about/pm-logo-2025.svg" alt="">
                         <div class="overlay-text">
                             <h3 class="h-cd">Publication and Marketing Division</h3>
                             <p class="text-justify">Divisi ini bertanggung jawab dalam pengembangan relasi dan
@@ -169,10 +165,10 @@
                         </div>
                     </div>
                     <div class="hidden lg:block cd-img-container">
-                        <img class="com-logo cd-img" src="assets/img/about/komdu-logo.svg" alt="">
+                        <img class="com-logo cd-img" src="assets/img/about/komdu-logo-2025.svg" alt="">
                     </div>
                     <div class="cd-img-container">
-                        <img class="cd-img" src="assets/img/about/hc-logo.svg" alt="">
+                        <img class="cd-img" src="assets/img/about/himticare-logo-2025.svg" alt="">
                         <div class="overlay-text">
                             <h3 class="h-cd">HIMTI Care Division</h3>
                             <p class="text-justify">Divisi ini mengurus hal-hal yang berkaitan dengan <i>study
@@ -189,7 +185,7 @@
                         Development
                     </h2>
                     <div class="cd-img-container">
-                        <img class="cd-img" src="assets/img/about/cnd-logo.svg" alt="">
+                        <img class="cd-img" src="assets/img/about/cnd-logo-2025.svg" alt="">
                         <div class="overlay-text">
                             <h3 class="h-cd">Creative and Design Division</h3>
                             <p class="text-justify">Divisi ini merupakan divisi yang berkontribusi dalam
@@ -200,10 +196,10 @@
                         </div>
                     </div>
                     <div class="hidden lg:block cd-img-container">
-                        <img class="com-logo cd-img" src="assets/img/about/komtig-logo.svg" alt=""  >
+                        <img class="com-logo cd-img" src="assets/img/about/komtig-logo-2025.svg" alt=""  >
                     </div>
                     <div class="cd-img-container">
-                        <img class="cd-img" src="assets/img/about/webdev-logo.svg" alt="">
+                        <img class="cd-img" src="assets/img/about/webdev-logo-2025.svg" alt="">
                         <div class="overlay-text">
                             <h3 class="h-cd">Web Development Division</h3>
                             <p class="text-justify">Divisi ini bertanggung jawab dalam pengembangan dan
@@ -221,7 +217,7 @@
                 <div class="cd-wrapper flex flex-col md:flex-row justify-center items-center">
                     <h2 class="h2 lg:hidden max-w-lg mx-auto font-extrabold pt-6">Commission 4: Human Resource Development</h2>
                     <div class="cd-img-container">
-                        <img class="cd-img" src="assets/img/about/supervisor-logo.svg" alt="">
+                        <img class="cd-img" src="assets/img/about/supervisor-logo-2025.svg" alt="">
                         <div class="overlay-text">
                             <h3 class="h-cd">Supervisor</h3>
                             <p class="text-justify">Divisi ini membina dan mengawasi kegiatan pada region-region yang belum memiliki struktur kepengurusan sendiri, 
@@ -229,10 +225,10 @@
                         </div>
                     </div>
                     <div class="hidden lg:block cd-img-container">
-                        <img class="w-75 com-logo cd-img" src="assets/img/about/kompat-logo.svg" alt="">
+                        <img class="w-75 com-logo cd-img" src="assets/img/about/kompat-logo-2025.svg" alt="">
                     </div>
                     <div class="cd-img-container">
-                        <img class="cd-img" src="assets/img/about/hrd-logo.svg" alt="">
+                        <img class="cd-img" src="assets/img/about/hrd-logo-2025.svg" alt="">
                         <div class="overlay-text">
                             <h3 class="h-cd">Human Resource Department</h3>
                             <p class="text-justify">Divisi ini bertugas untuk melakukan quality control dalam sumber daya manusia dalam ruang lingkup HIMTI. 
@@ -294,8 +290,8 @@
                     <p>
                         Suatu organisasi pasti memiliki visi dan misi, begitu juga dengan HIMTI BINUS. HIMTI
                         BINUS
-                        memiliki visi yaitu menjadi Himpunan Mahasiswa yang dikenal se-Asia Tenggara pada tahun
-                        2025,
+                        memiliki visi yaitu menjadi Himpunan Mahasiswa yang dikenal se-Asia Tenggara dalam bidang
+                        teknologi dan informatika,
                         dan misi berupa memperkuat ikatan antar sesama anggota HIMTI, menanamkan dan
                         mengembangkan sikap
                         professional dalam tiap-tiap individu, menjunjung tinggi rasa nasionalisme dan bakti
@@ -304,7 +300,7 @@
                         <br /><br />
                         Sesuai dengan lambang HIMTI yang berupa kubus 3 dimensi dengan tulisan TI didalamnya
                         sehingga
-                        HIMTI diharapkan mampu menjadi wadah untuk memberikan kontribusi nyata bagi mahasiswa/i.
+                        HIMTI diharapkan mampu menjadi wadah untuk memberikan kontribusi nyata bagi mahasiswa.
                     </p>
                 </div>
             </div>

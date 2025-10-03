@@ -1,5 +1,7 @@
 <?php
 
+$lines = range(1, 85); // To generate the dotted line
+$offset = 20; // Distance between dotted lines
 $journeys = [
     [
         "id" => 5,

@@ -32,8 +32,8 @@
                 <div>
                 <p class="ul-label fw-bold fs-5 || font-bold text-xl" style="margin-bottom: 1rem; text-align:start">Supported By</p>
                 <a href="https://www.dewaweb.com" target="_blank">
-    <img src="assets/img/dewaweb/dewaweb.webp" alt="DewaWeb" style="width: 250px !important">
-</a>
+                    <img src="assets/img/dewaweb/dewaweb.webp" alt="DewaWeb" style="width: 250px !important">
+                </a>
 
                 </div>
                 <div>

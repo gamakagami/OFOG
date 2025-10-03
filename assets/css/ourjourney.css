@@ -2,7 +2,6 @@
 
 .OURJOURNEY {
   width: 100%;
-  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -13,7 +12,6 @@
 
 #journeylist-container {
   width: 100%;
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -23,12 +21,10 @@
 #journeylist-content {
   position: relative;
   width: 100%;
-  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
-  overflow-y: none;
+  padding-bottom: 200px;
 }
 
 #journeylist-content::-webkit-scrollbar {
@@ -39,26 +35,18 @@
   width: 1024px;
   position: relative;
   height: auto;
-  padding: 5%;
+  padding: 3%;
   padding-right: 0%;
   font-size: 1.1rem;
-  border-left: 1px dotted white;
 }
 
-#journeylist-content .event::before {
-  width: 21px;
-  height: 21px;
-  content: "";
-  border: 3px solid white;
-  border-radius: 50%;
-  position: absolute;
-  background-color: black;
-  left: -1%;
+@media (max-width: 768px) {
+  #journeylist-content .event {
+    padding: 5%;
+  }
 }
 
 #journeylist-img {
-  /* width: 350px !important;
-  height: 150px !important; */
   width: 70%;
   max-width: 350px;
 }
@@ -111,56 +99,77 @@
   top: 8%;
 }
 
-@media (max-width: 1200px) {
-  .OURJOURNEY {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Mulish", sans-serif;
-    color: white;
-    background-color: #0c0217;
+/* === DESKTOP ONLY (>= 992px) === */
+@media (min-width: 992px) {
+  .journeylist-timeline {
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    margin-right: 1025px;
+    opacity: 0;
   }
 
-  #journeylist-container {
-    width: 100%;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  #journeylist-content {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-    overflow-y: none;
-  }
-
-  #journeylist-content::-webkit-scrollbar {
-    width: 0;
+  #journeylist-pointer {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    margin-right: 1025px;
+    border-radius: 12px;
+    transition: top 0s;
   }
 
   #journeylist-content .event {
-    position: relative;
-    width: 750px;
+    opacity: 0; /* fade in effect */
+    transition: opacity 0.3s;
+  }
+
+  #journeylist-content .event::before {
+    width: 21px;
+    height: 21px;
+    content: "";
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    left: -1%;
+  }
+}
+
+/* === TABLET (<= 1200px) === */
+@media (max-width: 1200px) {
+  .OURJOURNEY {
     height: auto;
-    padding: 5%;
+    font-family: "Mulish", sans-serif;
+  }
+
+  #journeylist-container {
+    height: auto;
+  }
+
+  #journeylist-content {
+    height: auto;
+  }
+
+  #journeylist-content .event {
+    width: 750px;
     font-size: 1.1rem;
     border-left: 1px dotted white;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+
+  .journeylist-timeline,
+  #journeylist-pointer {
+    display: none !important;
   }
 
   #journeylist-content .event::before {
     width: 15px;
     height: 15px;
-    content: "";
     border: 3px solid white;
     border-radius: 50%;
     position: absolute;
@@ -184,94 +193,42 @@
   }
 
   #journeylist-modal .event {
-    position: relative;
     width: 750px;
-    height: auto;
-    padding: 5%;
     font-size: 20px;
-    border-left: 1px dotted black;
-  }
-
-  #journeylist-modal .event::before {
-    width: 15px;
-    height: 15px;
-    content: "";
-    border: 3px solid black;
-    border-radius: 50%;
-    position: absolute;
-    background-color: white;
-    left: -1%;
-  }
-
-  #journeylist-modal #data-year {
-    position: relative;
-    padding-left: 10%;
-  }
-
-  /* #journeylist-img {
-    width: 300px !important;
-    height: 125px !important;
-  } */
-
-  #journeylist-modal #data-year-img {
-    position: relative;
-    padding-left: 10%;
-    top: 0%;
   }
 }
 
+/* === MOBILE (<= 768px) === */
 @media (max-width: 768px) {
   .OURJOURNEY {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    height: auto;
     font-family: "Mulish", sans-serif;
-    color: white;
-    background-color: #0c0217;
   }
 
-
   #journeylist-container {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    height: auto;
   }
 
   #journeylist-content {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-    overflow-y: none;
-  }
-
-  #journeylist-content::-webkit-scrollbar {
-    width: 0;
+    height: auto;
   }
 
   #journeylist-content .event {
-    position: relative;
-    /* width: 500px; */
     width: 90%;
-    height: auto;
-    padding: 5%;
     font-size: 1.1rem;
     border-left: 1px dotted white;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+
+  .journeylist-timeline,
+  #journeylist-pointer {
+    display: none !important;
   }
 
   #journeylist-content .event::before {
     width: 10px;
     height: 10px;
-    content: "";
     border: 3px solid white;
     border-radius: 50%;
     position: absolute;
@@ -290,49 +247,18 @@
     top: 0%;
   }
 
-  .modal {
-    overflow: hidden;
-  }
-
-  .modal-dialog {
-    max-width: 100% !important;
-  }
-
-  .modal-dialog-centered {
-    margin-top: 20%;
-    min-height: 100% !important;
-  }
-
-  .modal-content {
-    border-radius: 30px 30px 0px 0px !important;
-    background-color: white;
-    color: black;
-  }
-
-  .modal-body {
-    height: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-
   #journeylist-modal {
     margin-bottom: 17.5%;
   }
 
   #journeylist-modal .event {
-    position: relative;
-    width: 500px;
-    height: auto;
-    padding: 5%;
+    width: 90%;
     font-size: 20px;
-    border-left: 1px dotted black;
   }
 
   #journeylist-modal .event::before {
     width: 10px;
     height: 10px;
-    content: "";
     border: 3px solid black;
     border-radius: 50%;
     position: absolute;
@@ -340,20 +266,7 @@
     left: -1%;
   }
 
-  #journeylist-modal #data-year {
-    position: relative;
-    padding-left: 10%;
-  }
-
-  #journeylist-modal #data-year-img {
-    position: relative;
-    padding-left: 10%;
-    top: 0%;
-  }
-
   #journeylist-img {
-    /* width: 250px !important; */
     min-width: 150px;
-    /* height: 100px !important; */
   }
 }
