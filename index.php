@@ -547,7 +547,7 @@ include('components/journey-items.php');
           </div>
         </div>
 
-         <div class="article-card">
+<!--          <div class="article-card">
     <div class="article-card-inner placeholder">Placeholder</div>
   </div>
     <div class="article-card">
@@ -558,7 +558,7 @@ include('components/journey-items.php');
   </div>
     <div class="article-card">
     <div class="article-card-inner placeholder">Placeholder</div>
-  </div>
+  </div> -->
 
       </div>
     </div>
