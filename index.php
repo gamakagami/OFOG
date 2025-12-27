@@ -354,6 +354,7 @@ include('components/journey-items.php');
 
 .article-track {
   display: flex;
+  align-items: stretch;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -362,13 +363,15 @@ include('components/journey-items.php');
   min-width: 33.3333%;
   padding: 15px;
   box-sizing: border-box;
+  display: flex;
 }
 
 .article-card-inner {
   position: relative;
   border-radius: 16px;
+  width:100%;
   padding: 18px;
-  height: 190px;
+  min-height: 190px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
