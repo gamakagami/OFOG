@@ -333,24 +333,290 @@ include('components/journey-items.php');
         </div>
     </div>
     
-    
-    <div class="ourarticle">
-        <div class="title">
-            <span>Our Articles</span>
-        </div>
-        <div class="container">
-            <div class="row" id="RSSarticle">
+    <style>
+/* ================= OUR ARTICLES ================= */
+.ourarticle {
+  padding: 80px 0;
+  color: white;
+}
 
+/* Carousel layout */
+.article-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.article-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.article-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Card */
+.article-card {
+  min-width: 33.3333%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.article-card-inner {
+  background: linear-gradient(160deg, #142414, #0b140b);
+  border-radius: 16px;
+  padding: 18px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px rgba(0,0,0,.45);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.article-card-inner:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0,0,0,.6);
+}
+
+/* Text */
+.article-location {
+  font-size: 12px;
+  color: #bcbcbc;
+}
+
+.article-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 10px 0;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-date {
+  font-size: 12px;
+  color: #cfcfcf;
+}
+
+.article-tag {
+  font-size: 11px;
+  background: #ffffff;
+  color: #000;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Arrows */
+.article-arrow {
+  background: none;
+  border: none;
+  font-size: 42px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.article-arrow.show {
+  display: block;
+}
+
+/* Dots */
+.article-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.article-dots span {
+  width: 10px;
+  height: 10px;
+  background: #777;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.article-dots span.active {
+  background: white;
+}
+
+.article-card-inner.placeholder {
+  background: repeating-linear-gradient(
+    45deg,
+    #1a1a1a,
+    #1a1a1a 10px,
+    #202020 10px,
+    #202020 20px
+  );
+  color: #9f9f9f;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+</style>
+
+<div class="ourarticle">
+  <div class="title">
+    <span>Our Articles</span>
+  </div>
+
+  <div class="container article-carousel-wrapper">
+    <button class="article-arrow" id="articlePrev">‹</button>
+
+    <div class="article-carousel">
+      <div class="article-track" id="articleTrack">
+
+        <!-- Card 1 -->
+        <div class="article-card">
+          <div class="article-card-inner">
+            <div>
+              <div class="article-location">Alam Sutera | Kemanggisan</div>
+              <div class="article-title">[HIMTI Responsi] Computational Physics (UAS)</div>
             </div>
-
+            <div class="article-footer">
+              <div class="article-date">Sat Jan 18 2025</div>
+              <div class="article-tag">Video</div>
+            </div>
+          </div>
         </div>
-        <div class="articledata d-flex" style="overflow-x: auto;">
 
+        <!-- Card 2 -->
+        <div class="article-card">
+          <div class="article-card-inner">
+            <div>
+              <div class="article-location">Alam Sutera | Kemanggisan</div>
+              <div class="article-title">[HIMTI Responsi] Algorithm Design Analysis</div>
+            </div>
+            <div class="article-footer">
+              <div class="article-date">Sat Jan 18 2025</div>
+              <div class="article-tag">Video</div>
+            </div>
+          </div>
         </div>
 
-        <div class="viewtestimoni mt-3"><a href="https://student-activity.binus.ac.id/himti"
-                class="btn btn-light btn-lg text-dark">View All Articles</a></div>
+        <!-- Card 3 -->
+        <div class="article-card">
+          <div class="article-card-inner">
+            <div>
+              <div class="article-location">Alam Sutera | Kemanggisan</div>
+              <div class="article-title">[HIMTI Responsi] Basic Statistics</div>
+            </div>
+            <div class="article-footer">
+              <div class="article-date">Sat Jan 18 2025</div>
+              <div class="article-tag">Video</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="article-card">
+          <div class="article-card-inner">
+            <div>
+              <div class="article-location">Alam Sutera | Kemanggisan</div>
+              <div class="article-title">[HIMTI Responsi] Artificial Intelligence</div>
+            </div>
+            <div class="article-footer">
+              <div class="article-date">Sat Jan 18 2025</div>
+              <div class="article-tag">Video</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="article-card">
+          <div class="article-card-inner">
+            <div>
+              <div class="article-location">Alam Sutera | Kemanggisan</div>
+              <div class="article-title">[HIMTI Study Club] Algorithm & Programming</div>
+            </div>
+            <div class="article-footer">
+              <div class="article-date">Tue Jan 14 2025</div>
+              <div class="article-tag">Event</div>
+            </div>
+          </div>
+        </div>
+
+         <div class="article-card">
+    <div class="article-card-inner placeholder">Placeholder</div>
+  </div>
+    <div class="article-card">
+    <div class="article-card-inner placeholder">Placeholder</div>
+  </div>
+    <div class="article-card">
+    <div class="article-card-inner placeholder">Placeholder</div>
+  </div>
+    <div class="article-card">
+    <div class="article-card-inner placeholder">Placeholder</div>
+  </div>
+
+      </div>
     </div>
+
+    <button class="article-arrow" id="articleNext">›</button>
+  </div>
+
+  <div class="article-dots" id="articleDots"></div>
+
+  <div class="viewtestimoni mt-4 text-center">
+    <a href="https://student-activity.binus.ac.id/himti"
+       class="btn btn-light btn-lg text-dark">
+       View All Articles
+    </a>
+  </div>
+</div>
+
+<script>
+/* ================= ARTICLES CAROUSEL SCRIPT ================= */
+(function () {
+  const track = document.getElementById("articleTrack");
+  const cards = document.querySelectorAll(".article-card");
+  const dotsContainer = document.getElementById("articleDots");
+  const prevBtn = document.getElementById("articlePrev");
+  const nextBtn = document.getElementById("articleNext");
+
+  const itemsPerPage = 3;
+  const totalPages = Math.ceil(cards.length / itemsPerPage);
+  let currentPage = 0;
+
+  for (let i = 0; i < totalPages; i++) {
+    const dot = document.createElement("span");
+    dot.addEventListener("click", () => goToPage(i));
+    dotsContainer.appendChild(dot);
+  }
+
+  function updateUI() {
+    track.style.transform = `translateX(${-currentPage * 100}%)`;
+
+    [...dotsContainer.children].forEach((dot, i) =>
+      dot.classList.toggle("active", i === currentPage)
+    );
+
+    prevBtn.classList.toggle("show", currentPage > 0);
+    nextBtn.classList.toggle("show", currentPage < totalPages - 1);
+  }
+
+  function goToPage(page) {
+    currentPage = page;
+    updateUI();
+  }
+
+  prevBtn.onclick = () => goToPage(currentPage - 1);
+  nextBtn.onclick = () => goToPage(currentPage + 1);
+
+  updateUI();
+})();
+</script>
 
 
     <div class="OURJOURNEY" id="our-journey-section">
