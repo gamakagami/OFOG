@@ -365,7 +365,6 @@ include('components/journey-items.php');
   box-sizing: border-box;
   display: flex;
 }
-
 .article-card-inner {
   position: relative;
   border-radius: 16px;
@@ -429,6 +428,7 @@ include('components/journey-items.php');
 
 .article-footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
