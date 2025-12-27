@@ -365,20 +365,50 @@ include('components/journey-items.php');
 }
 
 .article-card-inner {
-  background: linear-gradient(160deg, #142414, #0b140b);
+  position: relative;
   border-radius: 16px;
   padding: 18px;
   height: 190px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 10px 25px rgba(0,0,0,.45);
-  transition: transform .3s ease, box-shadow .3s ease;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
+
+.article-card-inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://assets.ppy.sh/user-profile-covers/12936171/30872f84d4ea1eb72fee31b7ff17a1cd05bc60cd962423823aabd70f5fd96fa4.jpeg')
+    center / cover no-repeat;
+  transform: scale(1);
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+.article-card-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.article-card-inner:hover::before {
+  transform: scale(1.08);
+}
+
+.article-card-inner > * {
+  position: relative;
+  z-index: 2;
+}
+
 
 .article-card-inner:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 35px rgba(0,0,0,.6);
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 3px 10px 0px;
 }
 
 /* Text */
@@ -412,6 +442,11 @@ include('components/journey-items.php');
   padding: 4px 12px;
   border-radius: 20px;
   font-weight: 600;
+}
+
+.article-tag:hover {
+  cursor: pointer;
+  background: #e4e4e4;
 }
 
 /* Arrows */
